@@ -11,7 +11,7 @@ export function LifeStyleComponent() {
                 <div className="w-1/2 mt-16">
                     <h2 className="text-gray-700 text-5xl mb-4">Lifestyle</h2>
                     <p className="text-sm text-gray-600">
-                        In today's fast-paced world, lifestyle choices increasingly prioritize balance and well-being. This includes trends towards mindfulness, sustainable living, and personalized experiences
+                        In today&apos;s fast-paced world, lifestyle choices increasingly prioritize balance and well-being. This includes trends towards mindfulness, sustainable living, and personalized experiences
                     </p>
                 </div>
             </div>

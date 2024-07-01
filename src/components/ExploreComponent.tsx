@@ -13,7 +13,7 @@ export function ExploreComponent() {
                             <Image src={'/1.jpg'} width={600} height={600} alt="1" className="h-full w-full object-cover overflow-hidden rounded shadow" />
                         </div>
                         <p className="mt-6 mb-2 text-sm text-teal-500">Healthy Eating</p>
-                        <h2 className="text-4xl text-gray-900 font-light">The Benefits of a Plant-Based Diet: A Beginner's Guide</h2>
+                        <h2 className="text-4xl text-gray-900 font-light">The Benefits of a Plant-Based Diet: A Beginner&apos;s Guide</h2>
                         <p className="text-gray-600 text-sm mt-4">18 April 2022</p>
                     </div>
                     <div className="md:w-1/3 w-full">
