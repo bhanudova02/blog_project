@@ -1,3 +1,4 @@
+import { TechTrendingData } from "@/lib/data";
 import Image from "next/image";
 import { FaPlay, FaRegHeart } from "react-icons/fa";
 import { TbBadge } from "react-icons/tb";
@@ -15,43 +16,24 @@ export function TechnologyComponent() {
                 <h3 className="text-2xl text-gray-900 mb-8">Trending posts</h3>
                 <div className="flex flex-wrap">
                     <div className="md:w-2/3 w-full pb-6 md:pb-0 md:pr-12">
-                        <div className=" w-full h-96">
+                        <div className="w-full h-96">
                             <Image width={600} height={600} src="/21.png" alt="" className="h-full w-full object-cover overflow-hidden rounded shadow" />
                         </div>
-                        <p className="mt-6 mb-2 text-sm text-teal-500">Travel</p>
-                        <h2 className="text-4xl text-gray-900 font-light">Crossing the Canadian border on foot. Learn the basics and join me!</h2>
+                        <p className="mt-6 mb-2 text-sm text-teal-500">Technology</p>
+                        <h2 className="text-4xl text-gray-900 font-light">The Rise of Artificial Intelligence: Transforming the Future</h2>
                         <p className="text-gray-600 text-sm mt-4">12 September 2020</p>
                     </div>
                     <div className="md:w-1/3 w-full">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                            <div>
-                                <div className="h-44 w-full">
-                                    <Image width={600} height={600} src="/22.png" alt="" className="h-full w-full object-cover overflow-hidden rounded shadow" />
+                            {TechTrendingData.map((data, index) =>
+                                <div key={index}>
+                                    <div className="h-44 w-full">
+                                        <Image width={600} height={600} src={data.ImgSrc} alt="" className="h-full w-full object-cover overflow-hidden rounded shadow" />
+                                    </div>
+                                    <h2 className="mt-3 text-gray-900 text-base">{data.Title}</h2>
+                                    <p className="text-gray-600 text-sm mt-3">{data.Title}</p>
                                 </div>
-                                <h2 className="mt-3 text-gray-900 text-base">10 Tips to design productively amidst the pandemic</h2>
-                                <p className="text-gray-600 text-sm mt-3">12 September 2020</p>
-                            </div>
-                            <div>
-                                <div className="h-44 w-full">
-                                    <Image width={600} height={600} src="/23.png" alt="" className="h-full w-full object-cover overflow-hidden rounded shadow" />
-                                </div>
-                                <h2 className="mt-3 text-gray-900 text-base">10 Tips to design productively amidst the pandemic</h2>
-                                <p className="text-gray-600 text-sm mt-3">12 September 2020</p>
-                            </div>
-                            <div>
-                                <div className="h-44 w-full">
-                                    <Image width={600} height={600} src="/24.png" alt="" className="h-full w-full object-cover overflow-hidden rounded shadow" />
-                                </div>
-                                <h2 className="mt-3 text-gray-900 text-base">10 Tips to design productively amidst the pandemic</h2>
-                                <p className="text-gray-600 text-sm mt-3">12 September 2020</p>
-                            </div>
-                            <div>
-                                <div className="h-44 w-full">
-                                    <Image width={600} height={600} src="/25.png" alt="" className="h-full w-full object-cover overflow-hidden rounded shadow" />
-                                </div>
-                                <h2 className="mt-3 text-gray-900 text-base">10 Tips to design productively amidst the pandemic</h2>
-                                <p className="text-gray-600 text-sm mt-3">12 September 2020</p>
-                            </div>
+                            )}
                         </div>
                     </div>
                 </div>

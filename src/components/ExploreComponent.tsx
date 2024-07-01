@@ -1,6 +1,6 @@
 import { BlogPostData, TrendingData, TrendingVideoData, postsData } from "@/lib/data";
 import Image from "next/image";
-import { FaFile, FaPlay, FaRegHeart, FaRegSave, FaSave } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 import { TbBadge } from "react-icons/tb";
 
 export function ExploreComponent() {
@@ -10,19 +10,19 @@ export function ExploreComponent() {
                 <div className="flex flex-wrap ">
                     <div className="md:w-2/3 w-full pb-6 md:pb-0 md:pr-12">
                         <div className="h-96 w-full">
-                            <Image src={'/1.png'} width={600} height={600} alt="1" className="h-full w-full object-cover overflow-hidden rounded shadow" />
+                            <Image src={'/1.jpg'} width={600} height={600} alt="1" className="h-full w-full object-cover overflow-hidden rounded shadow" />
                         </div>
-                        <p className="mt-6 mb-2 text-sm text-teal-500">Travel</p>
-                        <h2 className="text-4xl text-gray-900 font-light">Crossing the Canadian border on foot. Learn the basics and join me!</h2>
-                        <p className="text-gray-600 text-sm mt-4">12 September 2020</p>
+                        <p className="mt-6 mb-2 text-sm text-teal-500">Healthy Eating</p>
+                        <h2 className="text-4xl text-gray-900 font-light">The Benefits of a Plant-Based Diet: A Beginner's Guide</h2>
+                        <p className="text-gray-600 text-sm mt-4">18 April 2022</p>
                     </div>
                     <div className="md:w-1/3 w-full">
                         <div className="h-96 w-full">
-                            <Image src={'/2.png'} width={600} height={600} alt="1" className="h-full w-full object-cover overflow-hidden rounded shadow" />
+                            <Image src={'/2.jpg'} width={600} height={600} alt="2" className="h-full w-full object-cover overflow-hidden rounded shadow" />
                         </div>
-                        <p className="mt-6 mb-2 text-sm text-teal-500">Travel</p>
-                        <h2 className="text-4xl text-gray-900 font-light">Crossing the Canadian border on foot. Learn the basics and join me!</h2>
-                        <p className="text-gray-600 text-sm mt-4">12 September 2020</p>
+                        <p className="mt-6 mb-2 text-sm text-teal-500">Healthy Recipes</p>
+                        <h2 className="text-4xl text-gray-900 font-light">10 Delicious and Nutritious Smoothie Recipes for a Healthier You</h2>
+                        <p className="text-gray-600 text-sm mt-4">30 May 2022</p>
                     </div>
                 </div>
             </div>
@@ -78,8 +78,6 @@ export function ExploreComponent() {
                     </div>
                 </div>
             </div>
-
-
             {/* Trending Videos */}
             <div className="mx-auto container py-6 sm:py-12 px-4 xl:px-0">
                 <h3 className="text-2xl text-gray-900 mb-8">Trending Videos</h3>
@@ -89,20 +87,15 @@ export function ExploreComponent() {
                     {TrendingVideoData.map((data, index) =>
                         <div key={index} className="border-b border-gray-300">
                             <div className="h-48 w-full relative border-b border-gray-300">
-                                <div className="w-16 h-16 border-4 border-white rounded-full absolute inset-0 m-auto flex justify-center items-center text-white">
-                                    <FaPlay />
-                                </div>
-                                <Image src={data.ImgSrc} alt={data.ImgSrc} width={600} height={600} className="h-full w-full object-cover overflow-hidden shadow" />
+                                <iframe height={192} src={data.VideoSrc} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                             </div>
-                            <h4 className="text-xl text-center text-gray-800 mt-4">Introduction to Prototyping</h4>
-                            <p className="text-xs text-gray-600 mt-3 mb-8 text-center">3 hours, 30 minutes</p>
+                            <h4 className="text-xl text-center text-gray-800 mt-4">{data.Title}</h4>
+                            <p className="text-xs text-gray-600 mt-3 mb-8 text-center">{data.Paragraph}</p>
                         </div>
                     )}
 
                 </div>
             </div>
-
-
             {/* Blog Posts */}
             <div className="mx-auto container py-6 sm:py-12 px-4 xl:px-0">
                 <h3 className="text-2xl text-gray-900 mb-8">Blog Posts</h3>
@@ -128,11 +121,6 @@ export function ExploreComponent() {
                     )}
                 </div>
             </div>
-
-
-
-
-
         </div>
     )
 }
