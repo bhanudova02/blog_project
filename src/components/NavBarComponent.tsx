@@ -3,7 +3,8 @@ import Link from "next/link";
 import { TiThMenu } from "react-icons/ti";
 import { RiCloseCircleFill } from "react-icons/ri";
 import { useState } from "react"
-import { headerNavList } from "@/lib/data";
+import { navListData } from "@/lib/data";
+import { usePathname } from "next/navigation";
 export function NavBarComponent() {
     const [menuCls, setMenuCls] = useState('hidden');
     function handelToggleMenu(flag: boolean) {
@@ -13,6 +14,7 @@ export function NavBarComponent() {
             setMenuCls('hidden');
         }
     }
+    const pathName = usePathname();
     return (
         <div className="md:hidden block">
             <button onClick={() => handelToggleMenu(true)}>
@@ -25,9 +27,9 @@ export function NavBarComponent() {
                     </button>
                     <div className="flex justify-center items-center h-[100vh]">
                         <ul className="text-center space-y-10 text-4xl">
-                            {headerNavList.map(list =>
-                                <li className="hover:underline uppercase cursor-pointer" key={list}>
-                                    <Link onClick={() => handelToggleMenu(false)} href={'/'}>{list}</Link>
+                            {navListData.map((list,index) =>
+                                <li className={`${(pathName==list.Link?'underline uppercase cursor-pointer text-green-500':'hover:underline uppercase cursor-pointer')}`} key={index}>
+                                    <Link onClick={() => handelToggleMenu(false)} href={list.Link}>{list.Title}</Link>
                                 </li>
                             )}
                         </ul>

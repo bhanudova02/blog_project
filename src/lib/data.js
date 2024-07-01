@@ -1,4 +1,9 @@
-export const headerNavList = ["Explore", "Business", "Technology", "Lifestyle"]
+export const navListData = [
+    { Title: 'Explore', Link: '/' },
+    { Title: 'Business', Link: '/business' },
+    { Title: 'Technology', Link: '/tech' },
+    { Title: 'Lifestyle', Link: '/lifestyle' },
+]
 export const postsData = [
     {
         Title: 'Business',
@@ -38,3 +43,22 @@ export const TrendingData = [
         ImgSrc: '/10.png'
     }
 ];
+
+
+
+export const TrendingVideoData = [
+    { Title: 'Introduction to Prototyping', Paragraph: '3 hours, 30 minutes', ImgSrc: '/11.png' },
+    { Title: 'Introduction to Prototyping', Paragraph: '3 hours, 30 minutes', ImgSrc: '/12.png' },
+    { Title: 'Introduction to Prototyping', Paragraph: '3 hours, 30 minutes', ImgSrc: '/13.png' },
+    { Title: 'Introduction to Prototyping', Paragraph: '3 hours, 30 minutes', ImgSrc: '/14.png' },
+]
+
+
+export const BlogPostData = [
+    { ImgSrc: '/15.png', Title: 'How to get a good nights sleep according to science', SubTitle: 'Travel', BlogDate: '20th September 2020', Paragraph: 'Duis congue mattis odio, a posuere urna feugiat id. Praesent id est tellus. Sed mollis ex at dapibus hendrerit. Curabitur efficitur nulla at finibus suscipit duis efficitur .', HashTags: '#lifestyle #productivity #rest #sleep' },
+    { ImgSrc: '/16.png', Title: 'How to get a good nights sleep according to science', SubTitle: 'Travel', BlogDate: '20th September 2020', Paragraph: 'Duis congue mattis odio, a posuere urna feugiat id. Praesent id est tellus. Sed mollis ex at dapibus hendrerit. Curabitur efficitur nulla at finibus suscipit duis efficitur .', HashTags: '#lifestyle #productivity #rest #sleep' },
+    { ImgSrc: '/17.png', Title: 'How to get a good nights sleep according to science', SubTitle: 'Travel', BlogDate: '20th September 2020', Paragraph: 'Duis congue mattis odio, a posuere urna feugiat id. Praesent id est tellus. Sed mollis ex at dapibus hendrerit. Curabitur efficitur nulla at finibus suscipit duis efficitur .', HashTags: '#lifestyle #productivity #rest #sleep' },
+    { ImgSrc: '/18.png', Title: 'How to get a good nights sleep according to science', SubTitle: 'Travel', BlogDate: '20th September 2020', Paragraph: 'Duis congue mattis odio, a posuere urna feugiat id. Praesent id est tellus. Sed mollis ex at dapibus hendrerit. Curabitur efficitur nulla at finibus suscipit duis efficitur .', HashTags: '#lifestyle #productivity #rest #sleep' },
+    { ImgSrc: '/19.png', Title: 'How to get a good nights sleep according to science', SubTitle: 'Travel', BlogDate: '20th September 2020', Paragraph: 'Duis congue mattis odio, a posuere urna feugiat id. Praesent id est tellus. Sed mollis ex at dapibus hendrerit. Curabitur efficitur nulla at finibus suscipit duis efficitur .', HashTags: '#lifestyle #productivity #rest #sleep' },
+    { ImgSrc: '/20.png', Title: 'How to get a good nights sleep according to science', SubTitle: 'Travel', BlogDate: '20th September 2020', Paragraph: 'Duis congue mattis odio, a posuere urna feugiat id. Praesent id est tellus. Sed mollis ex at dapibus hendrerit. Curabitur efficitur nulla at finibus suscipit duis efficitur .', HashTags: '#lifestyle #productivity #rest #sleep' },
+]
