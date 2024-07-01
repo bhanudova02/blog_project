@@ -288,7 +288,7 @@ export const TechTrendingBlog = [
         Title: 'The Growing Importance of Cybersecurity in a Connected World',
         SubTitle: 'Security',
         BlogDate: 'July 1, 2024',
-        Paragraph: 'Learn about the increasing threats in the digital landscape and discover best practices to protect your data and devices. As the world becomes more interconnected, cybersecurity becomes paramount. Explore essential measures like strong passwords, multi-factor authentication, and keeping software up-to-date to safeguard your online presence.',
+        Paragraph: 'Learn about the increasing threats in the digital landscape and discover best  data and devices. cybersecurity becomes paramount. Explore essential measures like strong passwords,  and keeping software up-to-date to safeguard your online presence.',
         HashTags: '#cybersecurity #security #technology #privacy'
     },
     {
@@ -296,7 +296,7 @@ export const TechTrendingBlog = [
         Title: 'The Future of Work: Automation and the Evolving Job Market',
         SubTitle: 'Trends',
         BlogDate: 'July 1, 2024',
-        Paragraph: 'Uncover how automation is impacting the job market and explore the skills needed to thrive in a technology-driven future. While automation may displace some jobs, it also creates new opportunities. By developing skills in areas like critical thinking, problem-solving, creativity, and adaptability, you can position yourself for success in the evolving workplace.',
+        Paragraph: 'Uncover how automation is impacting the job market and explore the skills needed to thrive in a technology-driven future. While automation may displace some jobs, it also creates new opportunities. creativity, and adaptability, you can position yourself for success in the evolving workplace.',
         HashTags: '#futureofwork #automation #technology #jobs'
     },
     {
@@ -309,12 +309,102 @@ export const TechTrendingBlog = [
     },
     {
         ImgSrc: '/tech_trend_9.jpg',
-        Title: 'The Expanding World of Virtual Reality (VR) and Augmented Reality (AR)',
+        Title: 'The Expanding World of Virtual Reality and Augmented Reality',
         SubTitle: 'Immersion',
         BlogDate: 'July 1, 2024',
-        Paragraph: 'Explore the exciting possibilities of VR and AR, technologies blurring the lines between the physical and digital worlds. VR immerses users in a completely simulated environment, while AR overlays digital information onto the real world. VR has applications in gaming, education, and training, while AR can transform fields like marketing, manufacturing, and healthcare.',
-        HashTags: '#VR #AR #virtualreality #augmentedreality #technology #immersion'
+        Paragraph: 'Explore the exciting possibilities of VR and AR, technologies blurring the lines between the physical and digital worlds. while AR overlays digital information onto the real world. VR has applications in gaming, education, and training, manufacturing, and healthcare.',
+        HashTags: '#VR #AR #augmentedreality #technology #immersion'
     }
 ];
 
 
+
+export const LifeStyleData = [
+    {
+        Title: 'Top Travel Destinations for Summer 2024',
+        Paragraph: 'September 13, 2020',
+        ImgSrc: '/list_style1.jpg'
+    },
+    {
+        Title: 'DIY Home Improvement Projects for Beginners',
+        Paragraph: 'September 14, 2020',
+        ImgSrc: '/list_style2.jpg'
+    },
+    {
+        Title: 'Essential Summer Skincare Routine',
+        Paragraph: 'September 15, 2020',
+        ImgSrc: '/list_style3.jpg'
+    },
+    {
+        Title: 'Delicious and Easy Summer Salads',
+        Paragraph: 'September 16, 2020',
+        ImgSrc: '/list_style4.jpg'
+    }
+];
+
+export const LifeStyleVideo = [
+    {
+        FrameSrc: 'https://www.youtube.com/embed/w3aGh2TPizo?si=mZUvyivQkA3wTUjs',
+        Title: 'Ultimate Summer Travel Guide: Europe on a Budget',
+        Paragraph: 'Explore the beauty of Europe without breaking the bank. Learn travel hacks, budget-friendly destinations, and tips for a memorable European adventure.',
+    },
+    {
+        FrameSrc: 'https://www.youtube.com/embed/gf57ej2SQB8?si=2ukFn6CmGuZrz3LO',
+        Title: '5 Easy DIY Home Decor Projects to Refresh Your Space',
+        Paragraph: 'Give your home a quick and stylish makeover with these simple DIY projects. Learn how to create statement pieces, add pops of color, and personalize your space.',
+    },
+    {
+        FrameSrc: 'https://www.youtube.com/embed/Er7uFZNiYqE?si=UGQYFeNejynd9Yxa',
+        Title: 'Summer Fashion Haul & Try-On: Top Trends for 2024',
+        Paragraph: 'Join a fashion influencer as they showcase the hottest summer trends and provide styling tips to help you create on-point summer looks.',
+    },
+    {
+        FrameSrc: 'https://www.youtube.com/embed/Wvd9z-CYhg4?si=DEqz_CGcfEV5fs3N',
+        Title: 'Healthy and Flavorful Summer Salads in 30 Minutes',
+        Paragraph: 'Whip up delicious and nutritious salads in no time with these easy recipes. Perfect for busy weeknights or light summer meals.',
+    },
+];
+
+
+export const LifeStyleBlog = [
+    {
+        ImgSrc: '/list_style5.jpg',
+        Title: '5 Summer Self-Care Rituals for a More Mindful Season',
+        SubTitle: 'Wellness',
+        BlogDate: 'July 1, 2024',
+        Paragraph: 'Embrace the sunshine while prioritizing your well-being with these self-care practices designed to help you feel refreshed, energized, and present throughout the summer.',
+        HashTags: "#selfcare #summerwellness #mindfulness #mentalhealth"
+    },
+    {
+        ImgSrc: '/list_style6.jpg',
+        Title: 'The Ultimate Guide to Planning a Sustainable Summer BBQ',
+        SubTitle: 'Entertainment',
+        BlogDate: 'July 1, 2024',
+        Paragraph: 'Host a memorable BBQ thats kind to the environment. Discover tips for eco-friendly planning, delicious plant-based recipes, and sustainable grilling practices.',
+        HashTags: "#sustainableliving #ecofriendlybbq #summerfun #outdoorliving"
+    },
+    {
+        ImgSrc: '/list_style7.jpg',
+        Title: 'Beat the Heat: Refreshing Mocktail Recipes for Summer Gatherings',
+        SubTitle: 'Food & Drinks',
+        BlogDate: 'July 1, 2024',
+        Paragraph: 'Impress your guests with these delicious and non-alcoholic beverage options perfect for hot summer days. Explore a variety of flavors and find the perfect mocktail for any occasion.',
+        HashTags: "#mocktails #summerdrinks #refreshing"
+    },
+    {
+        ImgSrc: '/list_style8.jpg',
+        Title: 'Summer Travel Essentials: Packing List for a Perfect Trip',
+        SubTitle: 'Travel',
+        BlogDate: 'July 1, 2024',
+        Paragraph: 'Ensure a smooth and stress-free travel experience with this comprehensive packing list covering all the essentials you need for your summer getaway.',
+        HashTags: "#travel #packinglist #summervacation #essentials"
+    },
+    {
+        ImgSrc: '/list_style9.jpg',
+        Title: 'Creating a Relaxing Summer Home Spa Experience',
+        SubTitle: 'Wellness',
+        BlogDate: 'July 1, 2024',
+        Paragraph: 'Transform your bathroom into a tranquil spa haven. Discover DIY spa treatments, tips for creating a calming atmosphere, and self-care rituals to unwind and rejuvenate at home this summer.',
+        HashTags: "#homespa #wellness #selfcare #summervibes"
+    }
+];

@@ -9,7 +9,9 @@ export function BusinessComponent() {
             <div className="container mx-auto px-4 xl:px-0 py-6 sm:py-12">
                 <div className="w-1/2 mt-16">
                     <h2 className="text-gray-700 text-5xl mb-4">Business</h2>
-                    <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Check the actions below for more details</p>
+                    <p className="text-sm text-gray-600">
+                        Businesses thrive through innovation, strategic planning, and customer-centric approaches. Adaptability and effective leadership are crucial for navigating competitive markets.
+                    </p>
                 </div>
             </div>
 
@@ -46,7 +48,7 @@ export function BusinessComponent() {
                     {BusinessTrendingVideo.map((data, index) =>
                         <div key={index} className="border-b border-gray-300">
                             <div className="h-48 w-full relative border-b border-gray-300">
-                                <iframe height={192} src={data.videoSrc} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                                <iframe className="w-full h-full" src={data.videoSrc} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                             </div>
                             <h4 className="text-xl text-center text-gray-800 mt-4">{data.Title}</h4>
                             <p className="text-xs text-gray-600 mt-3 mb-8 text-center">{data.Paragraph}</p>
