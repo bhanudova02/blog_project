@@ -86,7 +86,7 @@ export function ExploreComponent() {
 
                     {TrendingVideoData.map((data, index) =>
                         <div key={index} className="border-b border-gray-300">
-                            <div className="h-48 w-full relative border-b border-gray-300">
+                            <div className="h-48 w-full relative border-b border-gray-300 flex justify-center items-center">
                                 <iframe height={192} src={data.VideoSrc} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                             </div>
                             <h4 className="text-xl text-center text-gray-800 mt-4">{data.Title}</h4>

@@ -7,7 +7,7 @@ export function TechnologyComponent() {
     return (
         <div>
             <div className="container mx-auto px-4 xl:px-0 py-6 sm:py-12">
-                <div className="w-1/2 mt-16">
+                <div className="w-full lg:w-1/2 lg:mt-16 mt-24 text-center lg:text-start">
                     <h2 className="text-gray-700 text-5xl mb-4">Technology</h2>
                     <p className="text-sm text-gray-600">
                         Technology is rapidly evolving, transforming how we work, communicate, and live. Innovations like AI, IoT, and smart devices are reshaping industries and daily routines alike.

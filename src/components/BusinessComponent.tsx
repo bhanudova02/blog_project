@@ -7,7 +7,7 @@ export function BusinessComponent() {
     return (
         <div>
             <div className="container mx-auto px-4 xl:px-0 py-6 sm:py-12">
-                <div className="w-1/2 mt-16">
+                <div className="w-full lg:w-1/2 lg:mt-16 mt-24 text-center lg:text-start">
                     <h2 className="text-gray-700 text-5xl mb-4">Business</h2>
                     <p className="text-sm text-gray-600">
                         Businesses thrive through innovation, strategic planning, and customer-centric approaches. Adaptability and effective leadership are crucial for navigating competitive markets.
